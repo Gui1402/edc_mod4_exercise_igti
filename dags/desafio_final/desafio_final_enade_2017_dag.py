@@ -39,7 +39,7 @@ with DAG(
 
     extracao = KubernetesPodOperator(
         namespace='airflow',
-        image="668038079790.dkr.ecr.us-east-2.amazonaws.com/extract-enade:latest",
+        image="668038079790.dkr.ecr.us-east-2.amazonaws.com/extract-enade:v1",
         cmds=["python", "/run.py"],
         name="extraction-enade-2017",
         task_id="extraction-enade-2017",
