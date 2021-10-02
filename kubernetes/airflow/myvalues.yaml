@@ -174,7 +174,7 @@ env:
   - name: AIRFLOW__CORE__REMOTE_LOGGING
     value: 'True'
   - name: AIRFLOW__LOGGING__REMOTE_BASE_LOG_FOLDER
-    value: 's3://airflow-logs-539445819060/logs/'
+    value: 's3://airflow-logs-gui/logs/'
   - name: AIRFLOW__LOGGING__REMOTE_LOG_CONN_ID
     value: 'my_aws'
 # - name: ""
@@ -270,7 +270,7 @@ data:
 
 # Fernet key settings
 # Note: fernetKey can only be set during install, not upgrade
-fernetKey: "BNC5SKk0LuqywBoewMjfwqB2c_ubpcGsorxh9gG1NFg="
+fernetKey: "bvSpvVb6A3qIfg8Po4LcmfTIUQ7nP944md_p0RxsCqs="
 fernetKeySecretName: ~
 
 # Flask secret key for Airflow Webserver: `[webserver] secret_key` in airflow.cfg
@@ -660,10 +660,10 @@ webserver:
   defaultUser:
     enabled: true
     role: Admin
-    username: neylsoncrepalde
-    email: neylson.crepalde@a3data.com.br
-    firstName: Neylson
-    lastName: Crepalde
+    username: guilhermelopes
+    email: guilherme.lopes@engenharia.ufjf.br
+    firstName: Guilherme
+    lastName: Lopes
     password: admin
 
   # Launch additional containers into webserver.
@@ -1176,7 +1176,7 @@ dags:
     # ssh examples ssh://git@github.com/apache/airflow.git
     # git@github.com:apache/airflow.git
     # https example: https://github.com/apache/airflow.git
-    repo: https://github.com/neylsoncrepalde/edc_mod4_exercise_igti.git
+    repo: https://github.com/Gui1402/edc_mod4_exercise_igti.git
     branch: dev
     rev: HEAD
     depth: 1
